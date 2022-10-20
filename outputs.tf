@@ -21,5 +21,5 @@ output "vsts_configuration" {
     root_folder     = "/"
     tenant_id       = data.azurerm_client_config.current.tenant_id
   }
-  desdescription = "Configuration used in Azure Data Factory or Azure Synapse Analytics for repository created in Azure DevOps"
+  description = "Configuration used in Azure Data Factory or Azure Synapse Analytics for repository created in Azure DevOps"
 }
