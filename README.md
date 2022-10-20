@@ -1,5 +1,5 @@
-# Azure Log Analytics Workspace Terraform module
-Terraform module for creation Microsoft SQL Azure Database Server
+# Azure DevOps Repository Terraform module
+Terraform module for creation Azure DevOps Repository
 
 ## Usage
 
@@ -39,12 +39,12 @@ No modules.
 
 ## Outputs
 
-| Name                                                                                         | Description |
-| -------------------------------------------------------------------------------------------- | ----------- |
-| <a name="output_repo"></a> [repo](#output\_repo)                                             | ?????????   |
-| <a name="output_vsts_configuration"></a> [vsts\_configuration](#output\_vsts\_configuration) | ?????       |
+| Name                                                                                         | Description                                                                                                |
+| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| <a name="output_repo"></a> [repo](#output\_repo)                                             | Attributes of repository created in Azure DevOps                                                           |
+| <a name="output_vsts_configuration"></a> [vsts\_configuration](#output\_vsts\_configuration) | Configuration used in Azure Data Factory or Azure Synapse Analytics for repository created in Azure DevOps |
 <!-- END_TF_DOCS -->
 
 ## License
 
-Apache 2 Licensed. For more information please see [LICENSE](https://github.com/data-platform-hq/terraform-azuredevops-mssql-server/blob/main/LICENSE)
+Apache 2 Licensed. For more information please see [LICENSE](https://github.com/data-platform-hq/terraform-azuredevops-ado-repo/blob/main/LICENSE)
