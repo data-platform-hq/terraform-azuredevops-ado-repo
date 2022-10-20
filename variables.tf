@@ -1,4 +1,4 @@
-required_version = ">= 1.0.0" # Required
+# Required
 variable "project" {
   type        = string
   description = "Project name"
