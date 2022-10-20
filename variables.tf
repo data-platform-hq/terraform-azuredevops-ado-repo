@@ -1,4 +1,3 @@
-# Required
 variable "project" {
   type        = string
   description = "Project name"
@@ -19,7 +18,6 @@ variable "project_name" {
   description = "Azure DevOps project name"
 }
 
-# Optional
 variable "default_branch" {
   type        = string
   default     = "refs/heads/main"
