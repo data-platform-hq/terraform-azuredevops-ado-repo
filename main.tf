@@ -3,6 +3,7 @@ data "azurerm_client_config" "current" {}
 
 locals {
   suffix = length(var.suffix) == 0 ? "" : "-${var.suffix}"
+  name   = var.custom_repo_name == null ? "${var.project}-${var.env}-${var.location}${local.suffix}" : "${var.custom_repo_name}${local.suffix}"
 }
 
 data "azuredevops_project" "this" {
@@ -11,7 +12,7 @@ data "azuredevops_project" "this" {
 
 resource "azuredevops_git_repository" "this" {
   project_id     = data.azuredevops_project.this.id
-  name           = var.custom_repo_name == null ? "${var.project}-${var.env}-${var.location}${local.suffix}" : "${var.custom_repo_name}${local.suffix}"
+  name           = local.name
   default_branch = var.default_branch
 
   initialization {
