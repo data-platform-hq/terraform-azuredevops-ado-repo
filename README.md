@@ -34,13 +34,15 @@ No modules.
 
 ## Inputs
 
-| Name                                                                           | Description                                                                                 | Type     | Default           | Required |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- | -------- | ----------------- | :------: |
-| <a name="input_project"></a> [project](#input\_project)                        | Project name                                                                                | `string` | n/a               |   yes    |
-| <a name="input_env"></a> [env](#input\_env)                                    | Environment name                                                                            | `string` | n/a               |   yes    |
-| <a name="input_location"></a> [location](#input\_location)                     | Specifies the supported Azure location where the resource exists                            | `string` | n/a               |   yes    |
-| <a name="input_project_name"></a> [project\_name](#input\_project\_name)       | Azure DevOps project name                                                                   | `string` | n/a               |   yes    |
-| <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch) | The ref of the default branch. Will be used as the branch name for initialized repositories | `string` | "refs/heads/main" |    no    |
+| Name                                                                                   | Description                                                                                 | Type     | Default           | Required |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------- | ----------------- | :------: |
+| <a name="input_project"></a> [project](#input\_project)                                | Project name                                                                                | `string` | n/a               |   yes    |
+| <a name="input_env"></a> [env](#input\_env)                                            | Environment name                                                                            | `string` | n/a               |   yes    |
+| <a name="input_location"></a> [location](#input\_location)                             | Specifies the supported Azure location where the resource exists                            | `string` | n/a               |   yes    |
+| <a name="input_project_name"></a> [project\_name](#input\_project\_name)               | Azure DevOps project name                                                                   | `string` | n/a               |   yes    |
+| <a name="input_suffix"></a> [suffix](#input\_suffix)                                   | Suffix to add to resource name                                                              | `string` | null              |    no    |
+| <a name="input_custom_repo_name"></a> [custom\_repo\_name](#input\_custom\_repo\_name) | Custom Azure DevOps Repo name                                                               | `string` | null              |    no    |
+| <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch)         | The ref of the default branch. Will be used as the branch name for initialized repositories | `string` | "refs/heads/main" |    no    |
 
 ## Outputs
 
