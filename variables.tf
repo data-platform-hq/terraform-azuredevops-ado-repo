@@ -18,6 +18,18 @@ variable "project_name" {
   description = "Azure DevOps project name"
 }
 
+variable "suffix" {
+  type        = string
+  description = "Suffix to add to resource"
+  default     = ""
+}
+
+variable "custom_repo_name" {
+  type        = string
+  description = "Custom Azure DevOps Repo name"
+  default     = null
+}
+
 variable "default_branch" {
   type        = string
   default     = "refs/heads/main"
