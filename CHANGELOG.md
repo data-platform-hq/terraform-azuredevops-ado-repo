@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/data-platform-hq/terraform-azuredevops-ado-repo/compare/v1.1.0...v1.1.1) (2023-04-12)
+
+
+### Bug Fixes
+
+* changed azurem versions ([118d87e](https://github.com/data-platform-hq/terraform-azuredevops-ado-repo/commit/118d87e5900e0e336bf5e60251b9b5ec7c9c35de))
+
 # [1.1.0](https://github.com/data-platform-hq/terraform-azuredevops-ado-repo/compare/v1.0.0...v1.1.0) (2023-03-08)
 
 
